@@ -1,9 +1,6 @@
-import { configure, shallow, ShallowWrapper } from "enzyme";
-import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
+import { shallow, ShallowWrapper } from "enzyme";
 
 import App from "./App";
-
-configure({ adapter: new Adapter() });
 
 describe("App Component", () => {
   let wrapper: ShallowWrapper;
