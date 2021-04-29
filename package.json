@@ -1,7 +1,8 @@
 {
   "name": "tdd-react-jest-enzyme",
   "version": "1.0.0",
-  "private": true,
+  "author": "Montacer Dkhilali",
+  "private": false,
   "dependencies": {
     "@types/enzyme": "^3.10.8",
     "@types/jest": "^26.0.15",
