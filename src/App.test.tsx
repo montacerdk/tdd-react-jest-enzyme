@@ -11,16 +11,21 @@ describe("App Component", () => {
     wrapper = shallow(<App />);
   });
 
-  test("renders counter page title", () => {
-    // console.log(wrapper.debug());
+  it("should render counter page title", () => {
+    console.log(wrapper.debug());
     expect(wrapper.find("h1").text()).toContain("This is a counter app.");
   });
 
-  test("renders a button with increment text", () => {
+  it("should render a button with increment text", () => {
     expect(wrapper.find("#increment-button").text()).toBe("Increment");
   });
 
-  test("renders the initial value of a state in a div", () => {
+  it("should render the initial value of a state in a div", () => {
     expect(wrapper.find("#counter-value").text()).toBe("0");
+  });
+
+  it("should simulate the click event of increment button", () => {
+    wrapper.find("#increment-button").simulate("click");
+    expect(wrapper.find("#counter-value").text()).toBe("1");
   });
 });
