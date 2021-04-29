@@ -21,6 +21,6 @@ describe("App Component", () => {
   });
 
   test("renders the initial value of a state in a div", () => {
-    expect(wrapper.find("#counter-value").text()).toBe(0);
+    expect(wrapper.find("#counter-value").text()).toBe("0");
   });
 });
