@@ -28,4 +28,11 @@ describe("App Component", () => {
     wrapper.find("#increment-button").simulate("click");
     expect(wrapper.find("#counter-value").text()).toBe("1");
   });
+
+  it("should simulate the click event of decrement button", () => {
+    wrapper.find("#increment-button").simulate("click");
+    expect(wrapper.find("#counter-value").text()).toBe("1");
+    wrapper.find("#decrement-button").simulate("click");
+    expect(wrapper.find("#counter-value").text()).toBe("0");
+  });
 });
